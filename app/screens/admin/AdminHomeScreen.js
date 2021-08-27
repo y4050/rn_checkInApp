@@ -47,10 +47,15 @@ function AdminHomeScreen(props) {
 
   return (
     <Screen style={styles.box}>
-      <Image
-        source={require("../../assets/akf_studio.png")}
-        style={styles.image}
-      />
+      <Text
+        style={{
+          fontSize: 5 * sizing.vh,
+          fontWeight: "600",
+          marginVertical: 3 * sizing.vh,
+        }}
+      >
+        Admin's Page
+      </Text>
       {props.isLoggedIn && (
         <View style={{ textAlign: "center" }}>
           <TouchableOpacity

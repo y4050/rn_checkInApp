@@ -68,12 +68,15 @@ function HomeScreen(props) {
           getNews();
         }}
       /> */}
-
-      <Image
-        source={require("../../assets/akf_studio.png")}
-        style={styles.image}
-      />
-
+      <Text
+        style={{
+          fontSize: 5 * sizing.vh,
+          fontWeight: "600",
+          marginVertical: 3 * sizing.vh,
+        }}
+      >
+        Student's Page
+      </Text>
       <TouchableOpacity
         style={styles.button}
         // onPress={() => navigation.navigate("ClassList")}
@@ -110,7 +113,7 @@ const styles = StyleSheet.create({
   button: {
     alignItems: "center",
     // backgroundColor: "#DDDDDD",
-    backgroundColor: "#FBC740",
+    backgroundColor: colors.primary,
     paddingHorizontal: 1 * sizing.vw,
     paddingVertical: 1 * sizing.vw,
     margin: 2 * sizing.vw,
